@@ -13,7 +13,7 @@ class ThaiTannic
         string staffName;
 
     };
-    int main()
+    
  
 
         
