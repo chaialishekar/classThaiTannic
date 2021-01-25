@@ -11,7 +11,52 @@ class ThaiTannic
         string staffName;
         
 };
+
+   class menu: public ThaiTannic{
+   public:
+   void display_menu(){
+       cout<<"
+Veg tom yum soup -110
+Veg man chow soup-110
+Veg wonton soup-110
+
+
+Starters
+Dim sum(vegetable/paneer/chicken)-200
+Paneer Sichuan
+Lotus stem gangjeong
+Spicy water-chestnut
+Potato fries 
+
+Combos of two-any of the above
+
+Main course
+Veg:
+Thai green curry-220
+Pad Thai-280
+Som tam-265
+Veg laska-160
+veg noodles-180
+
+Non veg:
+Chicken kimchi fried rice-280
+Prawn ramen noodles-200
+
+Meals:
+Asian pot noodles-360
+Thai wonton vegetable pot-380
+
+Deserts:
+Coconut ice cream-140
+Thai jelly-185
+Mango sticky rice-185
+Chocolate fudge ice-cream-160
+Chocolate lava cake-130
+
+"
+   }
 //class TableNo checks availability and allots available table
+
 
 class TableNo : public ThaiTannic 
 {
