@@ -1,14 +1,21 @@
 #include<iostream>
 using namespace std;
+
 //base class
 class ThaiTannic
 {
+
         public:
         string name ,location,owners;
 
         private:
         int noOfStaff;
         string staffName;
+
+    };
+    int main()
+ 
+
         
 };
 //class TableNo checks availability and allots available table
@@ -102,3 +109,4 @@ int main()
     return 0;
          
 }
+
