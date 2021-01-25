@@ -1,66 +1,74 @@
 #include<iostream>
 using namespace std;
-
 //base class
 class ThaiTannic
 {
-
         public:
         string name ,location,owners;
 
         private:
         int noOfStaff;
         string staffName;
-
-    };
-
-   class menu: public ThaiTannic{
-   public:
-   void display_menu(){
-       cout<<"
-Veg tom yum soup -110
-Veg man chow soup-110
-Veg wonton soup-110
-
-
-Starters
-Dim sum(vegetable/paneer/chicken)-200
-Paneer Sichuan
-Lotus stem gangjeong
-Spicy water-chestnut
-Potato fries 
-
-Combos of two-any of the above
-
-Main course
-Veg:
-Thai green curry-220
-Pad Thai-280
-Som tam-265
-Veg laska-160
-veg noodles-180
-
-Non veg:
-Chicken kimchi fried rice-280
-Prawn ramen noodles-200
-
-Meals:
-Asian pot noodles-360
-Thai wonton vegetable pot-380
-
-Deserts:
-Coconut ice cream-140
-Thai jelly-185
-Mango sticky rice-185
-Chocolate fudge ice-cream-160
-Chocolate lava cake-130
-
-"
-   }
-    
- 
-
         
+};
+//Class menu displays the menu
+class menu: public ThaiTannic
+{
+   public:
+   void display_menu()
+   {
+
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"T.H.A.I   T.A.N.I.C"<<endl;
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"\n-------------------------------------------------------"<<endl;	   
+cout<<"\nM.E.N.U"<<endl;
+cout<<"\n-------------------------------------------------------"<<endl;
+
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"\nSOUPS"<<endl;
+cout<<"\n-------------------------------------------------------"<<endl;   
+cout<<"\nVeg tom yum soup -110";
+cout<<"\nVeg man chow soup-110";
+cout<<"\nVeg wonton soup-110";
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"\nSTARTERS";
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"\nDim sum(vegetable/paneer/chicken)-200";
+cout<<"\nPaneer Sichuan";
+cout<<"\nLotus stem gangjeong";
+cout<<"\nSpicy water-chestnut";
+cout<<"\nPotato fries";
+cout<<"\nCombos of two-any of the above";
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"\nMAIN COURSE";
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"\nVEG:";
+cout<<"\nThai green curry-220";
+cout<<"\nPad Thai-280";
+cout<<"\nSom tam-265";
+cout<<"\nVeg laska-160";
+cout<<"\nveg noodles-180";
+cout<<"\nNON VEG:";
+cout<<"\nChicken kimchi fried rice-280";
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"\nMEALS:";
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"\nPrawn ramen noodles-200";
+cout<<"\nAsian pot noodles-360";
+cout<<"\nThai wonton vegetable pot-380";
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"\nDESERTS:";
+cout<<"\n-------------------------------------------------------"<<endl;
+cout<<"\nCoconut ice cream-140";
+cout<<"\nhai jelly-185";
+cout<<"\nMango sticky rice-185";
+cout<<"\nChocolate fudge ice-cream-160";
+cout<<"\nChocolate lava cake-130";
+cout<<"\n-------------------------------------------------------"<<endl;
+}
+      
+           
 };
 //class TableNo checks availability and allots available table
 
@@ -74,6 +82,7 @@ class TableNo : public ThaiTannic
      
      
 };
+
 // checkAvailability is a function of class of TableNo
 static bool tableNos[30];
     
@@ -144,13 +153,21 @@ void  TableNo :: checkAvailability(int members)
        
 
 }
+class OrdersandTakeout :  public TableNo
+
+{
+	
+	
+	
+};
 
 
 int main()
 {
     TableNo t;
     t.checkAvailability(2);
+    menu m;
+    m.display_menu();
     return 0;
          
 }
-
